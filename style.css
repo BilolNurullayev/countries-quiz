@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Rubik+Wet+Paint&display=swap');
+
+body {
+  font-family: sans-serif;
+  background-image: url("https://www.desktopbackground.org/download/2560x1600/2011/09/23/270387_world-map-abyss-wallpapers-image-and-backgrounds-for-desktop_2560x1600_h.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+
+.message-box-wrapper {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.message-box {
+  background-color: #fff;
+  position: fixed;
+  width: 40%;
+  text-align: center;
+  top: 25%;
+  left: 50%;
+  padding: 20px;
+  transform: translate(-50%, 0);
+  border-radius: 20px;
+
+}
+.message-box-title {
+  color: #3e3e3e;
+}
+
+.game-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(74, 77, 61, 0.751);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: white;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.score-display {
+  background-color: #065b66;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.timer {
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  margin-bottom: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.question {
+  font-size: 35px;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  margin: 10px 0 20px;
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.options {
+  display: block;
+  margin: 0 20px;
+}
+
+
+.options button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #333;
+  border-radius: 3px;
+}
+
+.options button:hover {
+  background: #DBDBDB;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.options button.correct {
+  background: #1a753f;
+  color: #fff;
+}
+
+.options button.wrong {
+  background: #801d12;
+  color: #fff;
+}
+
+.options button.correct-answer {
+  background: #1b5e2d;
+  color: #fff;
+}
+
+.start-button,
+.next-button {
+  color: #132f58;
+  font-size: 25px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.start-button {
+  color: #ffffff;
+  background-color: #333;
+}
+
+.start-button:hover {
+  background: #000000;
+}
+
+.next-button {
+  background: #000000;
+  color: #fff;
+  opacity: 0;
+}
+
+.next-button:hover {
+  background: #12315f;
+}
+
+.start-button:disabled,
+.next-button:disabled {
+  background: #BABABA;
+  cursor: auto;
+}
+
+.fas {
+  margin-right: 5px;
+}

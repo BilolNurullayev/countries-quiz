@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Capital Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1><i class="fas fa-globe"></i> Guess the Capital</h1>
+            <div class="score-display" id="score"><i class="fas fa-star"></i> Score: 0</div>
+        </div>
+        <div class="game-content">
+            <div class="question" id="question">The game consists of ten stages. <br> You have 15 seconds to answer each
+                level.
+            </div>
+            <div class="timer" id="timer">Time remaining: <span id="timer-value">15</span> seconds</div>
+            <div class="options" id="options"></div>
+        </div>
+        <button class="start-button" id="startButton">Start Game <i class="fas fa-play"></i></button>
+        <button class="next-button" id="nextButton" disabled>Next <i class="fas fa-arrow-right"></i></button>
+        <div class="question-1" id="question1"></div>
+    </div>
+    <div class="message-box-wrapper" id="message-box">
+        <div class="message-box">
+            <h1 class="message-box-title">Something went wrong!</h1>
+            <p>Hit F5 or CTRL+R !!!</p>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
